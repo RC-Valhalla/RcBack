@@ -15,3 +15,6 @@ sequelize.authenticate().then(function(){
 
 module.exports = sequelize;
 
+//importando models
+const sessiondb = require("./session.js")
+const useradm = require("./useradm.js")

@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize")
 const sequelize = require("./connection.js")
 
-const Login = sequelize.define("Login", {
+const login = sequelize.define("login", {
 	id:{
 	type:Sequelize.SMALLINT,
 	primaryKey:true,
@@ -77,3 +77,10 @@ const userAdm = sequelize.define("useradm", {
 		type:Sequelize.STRING(50)
 	}
 })
+
+// sync models
+//login.sync()
+//user.sync()
+//userAdm.sync()
+
+module.exports
